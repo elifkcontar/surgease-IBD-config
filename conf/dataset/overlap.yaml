@@ -1,0 +1,135 @@
+_target_: classes.dataset.Dataset
+name: overlap
+description: |
+  This is potentially the overlapping data splits that caused the good results in the 
+  paper. The overlaps are:
+  | sp1 vs. sp2  | Size sp1 | Size sp2 | Overlap size | Overlapping file names | 
+  |:-------------|:--------:|:--------:|:------------:|:-----------------------|
+  | train vs val |       72 |       17 |            6 | {'UC31-0.mp4', 'UC18-4.mp4', 'UC60-1.mp4', 'UC20-1.mp4', 'UC67-5.mp4', 'UC48-6.mp4'} |
+  | train - test |       72 |       18 |            7 | {'UC31-0.mp4', 'UC18-4.mp4', 'UC60-1.mp4', 'UC20-1.mp4', 'UC72-1.mp4', 'UC67-5.mp4', 'UC48-6.mp4'} |
+  | val - test   |       17 |       18 |           17 | {'UC31-0.mp4', 'UC18-4.mp4', 'UC60-1.mp4', 'UC15-1.mp4', 'UC29-5.mp4', 'UC20-1.mp4', 'UC67-5.mp4', 'UC79-4.mp4', 'UC30-5.mp4', 'UC1-6.mp4', 'UC16-4.mp4', 'UC10-0.mp4', 'UC53-4.mp4', 'UC48-6.mp4', 'UC14-4.mp4', 'UC61-4.mp4', 'UC21-2.mp4'} |
+#Note: Deleted items:
+#Train:'UC31-0.mp4', 'UC72-1.mp4', 'UC48-6.mp4'
+#Test and Valdiation:'UC18-4.mp4', 'UC60-1.mp4', 'UC20-1.mp4', 'UC67-5.mp4',
+project: reference  # Which Encord project it matches
+splits:
+  - _target_: classes.dataset.DatasetSplit
+    name: train
+    files:
+    - UC11-3.mp4
+    - UC12-5.mp4
+    - UC17-4.mp4
+    - UC18-4.mp4
+    - UC2-1.mp4
+    - UC20-1.mp4
+    - UC22-0.mp4
+    - UC23-1.mp4
+    - UC24-4.mp4
+    - UC25-4.mp4
+    - UC26-5.mp4
+    - UC27-4.mp4
+    - UC28-0.mp4
+    - UC32-0.mp4
+    - UC33-6.mp4
+    - UC34-5.mp4
+    - UC36-0.mp4
+    - UC37-1.mp4
+    - UC38-5.mp4
+    - UC39-4.mp4
+    - UC40-3.mp4
+    - UC41-4.mp4
+    - UC42-7.mp4
+    - UC44-5.mp4
+    - UC45-4.mp4
+    - UC46-0.mp4
+    - UC47-4.mp4
+    - UC49-4.mp4
+    - UC5-4.mp4
+    - UC50-1.mp4
+    - UC52-3.mp4
+    - UC54-4.mp4
+    - UC55-5.mp4
+    - UC56-5.mp4
+    - UC57-0.mp4
+    - UC59-5.mp4
+    - UC6-3.mp4
+    - UC60-1.mp4
+    - UC62-5.mp4
+    - UC63-2.mp4
+    - UC64-1.mp4
+    - UC66-0.mp4
+    - UC67-5.mp4
+    - UC68-1.mp4
+    - UC69-7.mp4
+    - UC7-4.mp4
+    - UC70-2.mp4
+    - UC71-1.mp4
+    - UC73-5.mp4
+    - UC74-2.mp4
+    - UC75-5.mp4
+    - UC76-4.mp4
+    - UC77-3.mp4
+    - UC78-5.mp4
+    - UC8-6.mp4
+    - UC80-2.mp4
+    - UC82-5.mp4
+    - UC83-4.mp4
+    - UC84-3.mp4
+    - UC85-0.mp4
+    - UC86-5.mp4
+    - UC87-6.mp4
+    - UC88-1.mp4
+    - UC9-4.mp4
+    - UC90-3.mp4
+    - UC91-4.mp4
+    - UC92-4.mp4
+    - UC93-4.mp4
+    - UC94-8.mp4
+  - _target_: classes.dataset.DatasetSplit
+    name: validation
+    files:
+      - UC10-0.mp4
+      - UC15-1.mp4
+      - UC21-2.mp4
+      - UC14-4.mp4
+      - UC53-4.mp4
+      - UC61-4.mp4
+      - UC79-4.mp4
+      - UC29-5.mp4
+      - UC30-5.mp4
+      - UC1-6.mp4
+      - UC16-4.mp4
+      - UC31-0.mp4
+      - UC48-6.mp4
+      - UC72-1.mp4
+  - _target_: classes.dataset.DatasetSplit
+    name: test
+    files:  
+      - UC10-0.mp4
+      - UC15-1.mp4
+      - UC21-2.mp4
+      - UC14-4.mp4
+      - UC53-4.mp4
+      - UC61-4.mp4
+      - UC79-4.mp4
+      - UC29-5.mp4
+      - UC30-5.mp4
+      - UC1-6.mp4
+      - UC16-4.mp4
+      - UC31-0.mp4
+      - UC48-6.mp4
+      - UC72-1.mp4
+#      - UC31-0.mp4
+#      - UC72-1.mp4
+#      - UC61-4.mp4
+#      - UC30-5.mp4
+#      - UC21-2.mp4
+#      - UC10-0.mp4
+#      - UC16-4.mp4
+#      - UC15-1.mp4
+#      - UC79-4.mp4
+#      - UC14-4.mp4
+#      - UC1-6.mp4
+#      - UC29-5.mp4
+#      - UC48-6.mp4
+#      - UC53-4.mp4

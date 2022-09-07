@@ -1,0 +1,30 @@
+# Feature Hashes from the ontology
+# Run src/print_project_info.py to list the available feature hashes in a given project.
+
+_target_: classes.project.Score
+scores:
+  - _target_: classes.project.SubScore
+    name: vascular  # Order is important here!
+    top_level: 6f8bf81b-714d-4387-bef6-7bd26d075968
+    options:
+      - 87000c19-48ca-426e-b50a-c5dc4a7b8253  # score 0
+      - 610fe22a-2385-43eb-b43e-bfccc8670ba0  # score 1
+      - d9aa49f5-babe-4bac-bd7b-691c92588fd0  # score 2
+
+  - _target_: classes.project.SubScore
+    name: bleeding
+    top_level: f8c24745-2d58-43f7-87ca-c5767eb26447
+    options:
+      - c0f5dd0d-688b-451f-9c08-378c2d8a5bb8  # score 0
+      - b97e8465-70ee-422e-9d99-57f6d8aaf156  # score 1
+      - 3a0a3cec-a444-46bd-9b0e-8f6d3f09d7cd  # score 2
+      - cc34b5ad-8d3b-4fc3-ae5c-7662988de4b5  # score 3
+
+  - _target_: classes.project.SubScore
+    name: erosion
+    top_level: 838e3c07-d471-4b9c-997f-214cc2d93312
+    options:
+      - 50ff75e0-2973-4f21-8c74-eba731250ae3  # score 0
+      - ff155879-b965-466b-b457-d22fd9efce14  # score 1
+      - ed3c08d1-dbc7-4a84-9e28-dd3a997c1c8c  # score 2
+      - 67648647-2cc6-407b-8b56-5af866d17788  # score 3

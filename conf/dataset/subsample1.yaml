@@ -1,0 +1,109 @@
+_target_: classes.dataset.Dataset
+name: subsample1
+description: |
+  This subsample was choosen to have an okay distribution among all sub scores in both
+  training and validation splits. Test split was not tested for distribution.
+project: reference  # Which Encord project it matches
+splits:
+  - _target_: classes.dataset.DatasetSplit
+    name: train
+    files:
+      - video42
+      - video68
+      - video65
+      - video73
+      - video128
+      - video34
+      - video141
+      - video118
+      - video109
+      - video39
+      - video131
+      - video85
+      - video152
+      - video54
+      - video17
+      - video45
+      - Video_19.mp4
+      - video143
+      - video108
+      - video148
+      - video104
+      - video29
+      - Video 166 A.mp4
+      - video59
+      - video111
+      - video119
+      - video101
+      - video117
+      - video13
+      - Video_2.mp4
+      - video153
+      - video137
+      - video14
+      - video2
+      - video74
+      - video155
+      - video61
+      - video87
+      - video97
+      - video139
+      - video129
+      - Video_21.mp4
+      - video37
+      - video31
+      - video90
+      - video60
+      - video69
+      - video132
+      - video56
+      - video154
+      - video43
+      - video58
+      - video170
+      - video106
+      - video113
+      - video71
+      - video135
+      - video144
+      - video53
+      - Video_17.mp4
+      - video35
+      - video3
+      - video98
+      - video140
+  - _target_: classes.dataset.DatasetSplit
+    name: validation
+    files:
+      - video27
+      - video146
+      - Video 167 A.mp4
+      - video138
+      - video11
+      - video9
+      - video10
+      - video176
+      - Video_23.mp4
+      - video32
+      - Video_1.mp4
+      - video67
+      - video120
+      - video20
+      - video64
+      - video136
+  - _target_: classes.dataset.DatasetSplit
+    name: test
+    files:
+      - UC33-6.mp4
+      - UC34-5.mp4
+      - UC36-0.mp4
+      - UC37-1.mp4
+      - UC38-5.mp4
+      - UC39-4.mp4
+      - UC40-3.mp4
+      - UC41-4.mp4
+      - UC42-7.mp4
+      - UC44-5.mp4
+      - UC45-4.mp4
+      - UC46-0.mp4
+      - UC47-4.mp4

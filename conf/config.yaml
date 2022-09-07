@@ -1,0 +1,24 @@
+defaults:
+  - project: reference
+  - dataset: overlap
+  - pl_logging: wandb
+  - _self_
+  - local
+
+split:
+  output_dir: ${data_root}/splits/${dataset.name}
+  copy_frames: False  # Use true if you want to be able to zip and ship dataset.
+
+model:
+  batch_size: 32
+  learning_rate: 1e-5
+  weight_decay: 1e-3
+  log_every_n_steps: 5
+  epochs: 100
+
+run:
+  data_suffix: ""
+
+hydra:  # operate from outputs directory to be able to store plots with inferred config files.
+  job:
+    chdir: True  

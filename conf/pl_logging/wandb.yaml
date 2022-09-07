@@ -1,0 +1,8 @@
+_target_: pytorch_lightning.loggers.WandbLogger
+project: ${project.short_name}-${dataset.name}
+name: ${now:%Y-%m-%d}/${now:%H_%M_%S}
+prefix: ""
+entity: "cord"  # set to name of your wandb team
+offline: False # set True to store all logs only locally
+id: null # pass correct id to resume experiment!
+log_model: True

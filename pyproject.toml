@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "surgearedata"
+version = "0.1.0"
+description = ""
+authors = ["Frederik Hvilshøj <frederik@cord.tech>"]
+
+[tool.poetry.dependencies]
+python = "^3.8,<3.11"
+encord = "^0.1.36"
+black = "^22.3.0"
+isort = "^5.10.1"
+numpy = "^1.22.4"
+matplotlib = "^3.5.2"
+av = "^9.2.0"
+opencv-python = "~4.5.5"
+natsort = "^8.1.0"
+pandas = "^1.4.3"
+hydra-core = "^1.2.0"
+pytorch-lightning = "^1.6.4"
+torchvision = "^0.13.0"
+scipy = "^1.8.1"
+scikit-learn = "^1.1.1"
+wandb = "^0.12.20"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+isort = "^5.10.1"
+pre-commit = "^2.19.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 80
+target-version = ['py38']
+include = '.*\/.*\.i?py(nb)?$'
+
+[tool.isort]
+profile = "black"
+

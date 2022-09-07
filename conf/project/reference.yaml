@@ -1,0 +1,9 @@
+defaults:
+  - ../score_identifiers@score
+  - _self_
+
+# SurgEase - Inflammatory bowel disease (reference)
+project_hash: 499f6b35-de54-4e23-82ac-19420fabd3c0
+api_key: mt-zFQiptFF4ytFlfenYgbEbCTEXpkzJjMBcwGCBwyM
+short_name: reference
+data_path: ${data_root}/${project.short_name}

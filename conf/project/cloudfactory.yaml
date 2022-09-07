@@ -1,0 +1,9 @@
+# SURGEASE - CLOUDFACTORY - PRODUCTION
+defaults:
+  - ../score_identifiers@score
+  - _self_
+
+project_hash: 5c349378-3e58-4028-af97-96ad9d137dd3
+api_key: fL_ktLRxfD90iQayw2dLVg-GVkPxQZVq9p6C6cvpvlg
+short_name: cloudfactory
+data_path: ${data_root}/${project.short_name}

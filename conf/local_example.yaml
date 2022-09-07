@@ -1,0 +1,9 @@
+#data_root: \C:\Users\ElifKübraÇontar\OneDrive - Surgease Innovations Ltd\Desktop\Datasets\IBD_orig
+data_root: C:\\Dataset
+
+pl_logging:  # WANDB entity for logging. Customize to your own account / team account.
+  entity: elifkcontar
+
+# Example of an overwrite:
+model:
+  batch_size: ""
